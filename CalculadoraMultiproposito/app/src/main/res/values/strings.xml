@@ -1,3 +1,15 @@
 <resources>
     <string name="app_name">Calculadora_Multiproposito</string>
+    <string name="intercambiar_monedas">Intercambiar monedas</string>
+    <string name="Texto_from">TextView</string>
+    <string name="Texto_to">TextView</string>
+
+    <string-array name="lista_monedas">
+        <item>Euros (EUR)</item>
+        <item>Dólares (USD)</item>
+        <item>Soles (PEN)</item>
+        <item>Francos Suizos (CHF)</item>
+        <item>Libras Esterlinas (GBP)</item>
+        <item>Yenes (JPY)</item>
+    </string-array>
 </resources>
