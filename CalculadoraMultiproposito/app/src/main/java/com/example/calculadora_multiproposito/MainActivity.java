@@ -31,13 +31,13 @@ public class MainActivity extends AppCompatActivity {
         tvMontoOrigen = findViewById(R.id.textView5);
         tvMontoDestino = findViewById(R.id.textView4);
 
-        // Creamos un adaptador usando la lista de monedas de strings.xml y NUESTRO diseño item_spinner
+        // adaptador usando la lista de monedas de strings.xml y   item_spinner
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(
                 this,
                 R.array.lista_monedas,
                 R.layout.item_spinner
         );
-        adapter.setDropDownViewResource(R.layout.item_spinner); // También para el menú desplegable
+        adapter.setDropDownViewResource(R.layout.item_spinner);
 
         spinnerOrigen.setAdapter(adapter);
         spinnerDestino.setAdapter(adapter);
@@ -73,7 +73,7 @@ public class MainActivity extends AppCompatActivity {
             findViewById(id).setOnClickListener(listenerNumero);
         }
 
-        // --- BOTÓN PUNTO DECIMAL (.) ---
+        //  BOTÓN PUNTO DECIMAL
         findViewById(R.id.btnDot).setOnClickListener(v -> {
             // Lógica de validación: Solo permitimos un punto decimal en todo el número
             if (!montoActual.contains(".")) {
@@ -82,7 +82,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        // --- BOTÓN DE BORRADO (⌫) ---
+        //  BOTÓN DE BORRADO (⌫)
         findViewById(R.id.btnDelete).setOnClickListener(v -> {
             if (montoActual.length() >  1) {
                 // Quitamos el último carácter de la cadena
@@ -96,10 +96,10 @@ public class MainActivity extends AppCompatActivity {
 
     }
     private void actualizarInterfaz() {
-        // Mostramos el número que el usuario está escribiendo en el campo superior
+        // el número que el usuario está escribiendo en el campo superior
         tvMontoOrigen.setText(montoActual);
 
-        // Disparamos el cálculo automático del resultado
+        // cálculo automático del resultado
         calcularResultado();
     }
     private void calcularResultado() {
@@ -112,11 +112,11 @@ public class MainActivity extends AppCompatActivity {
             // De String a Double
             double cantidad = Double.parseDouble(montoActual);
 
-            // textos de las monedas seleccionadas en los Spinners
+            // textos de las monedas en los Spinners
             String monedaOrigen = spinnerOrigen.getSelectedItem().toString();
             String monedaDestino = spinnerDestino.getSelectedItem().toString();
 
-            // Funcionamiento de la clase ConvertirDivisas
+            // Funcionamiento  ConvertirDivisas
             double resultado = conversor.convertir(cantidad, monedaOrigen, monedaDestino);
 
             tvMontoDestino.setText(String.format("%.2f", resultado));
