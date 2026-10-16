@@ -42,6 +42,7 @@ public class MainActivity extends AppCompatActivity {
         spinnerOrigen.setAdapter(adapter);
         spinnerDestino.setAdapter(adapter);
 
+        //-----------------------------------------------------
         // iniciales por defecto
         spinnerOrigen.setSelection(0);
         spinnerDestino.setSelection(1);
