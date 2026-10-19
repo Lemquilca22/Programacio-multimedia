@@ -60,24 +60,24 @@ public class MainActivity extends AppCompatActivity {
                 R.id.btn5, R.id.btn6, R.id.btn7, R.id.btn8, R.id.btn9
         };
         View.OnClickListener listenerNumero = v -> {
-            Button boton = (Button) v;
-            String digito = boton.getText().toString();
+            Button boton = (Button) v;// Sirve para identificar que botón se ha pulsado
+            String digito = boton.getText().toString(); // Esto sirve para obtener el texto del botón
 
             if (montoActual.equals("0")) {
                 montoActual = digito;
             } else {
-                montoActual += digito;
+                montoActual += digito;// Esto sirve para concatenar los dígitos si tenia 1, y presiono 2 se corre a la derecha 12
             }
             actualizarInterfaz();
         };
         for (int id : idsNumericos) {
-            findViewById(id).setOnClickListener(listenerNumero);
+            findViewById(id).setOnClickListener(listenerNumero);// Todos comparten el mismo Listener
         }
 
         //  BOTÓN PUNTO DECIMAL
         findViewById(R.id.btnDot).setOnClickListener(v -> {
             // Lógica de validación: Solo permitimos un punto decimal en todo el número
-            if (!montoActual.contains(".")) {
+            if (!montoActual.contains(".")) { //Esta condición está para no repetir puntos
                 montoActual += ".";
                 actualizarInterfaz();
             }
