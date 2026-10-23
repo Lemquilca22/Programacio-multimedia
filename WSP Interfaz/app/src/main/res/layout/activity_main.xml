@@ -210,7 +210,7 @@
                             android:background="@drawable/circle_shape"
                             android:clipToOutline="true"
                             android:scaleType="centerCrop"
-                            android:src="@drawable/Añadir" />
+                            android:src="@drawable/anadir" />
 
                         <TextView
                             android:id="@+id/addstorytext"
@@ -225,9 +225,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginEnd="12dp"
-                        android:orientation="vertical"
-                        android:scaleType="centerCrop"
-                        android:src="@drawable/Destacada1BJJ">
+                        android:orientation="vertical">
 
                         <ImageView
                             android:id="@+id/imageView"
@@ -236,7 +234,7 @@
                             android:background="@drawable/circle_shape"
                             android:clipToOutline="true"
                             android:scaleType="centerCrop"
-                            android:src="@drawable/Destacada1BJJ" />
+                            android:src="@drawable/destacada1bjj" />
 
                         <TextView
                             android:id="@+id/textdestacada1"
@@ -260,7 +258,7 @@
                             android:background="@drawable/circle_shape"
                             android:clipToOutline="true"
                             android:scaleType="centerCrop"
-                            android:src="@drawable/Jesus" />
+                            android:src="@drawable/yisus" />
 
                         <TextView
                             android:id="@+id/textdestacada2"
@@ -284,7 +282,7 @@
                             android:background="@drawable/circle_shape"
                             android:clipToOutline="true"
                             android:scaleType="centerCrop"
-                            android:src="@drawable/Hermanos" />
+                            android:src="@drawable/hermanos" />
 
                         <TextView
                             android:id="@+id/textdestacada3"
@@ -307,7 +305,7 @@
                             android:background="@drawable/circle_shape"
                             android:clipToOutline="true"
                             android:scaleType="centerCrop"
-                            android:src="@drawable/Españita" />
+                            android:src="@drawable/espanita" />
 
                         <TextView
                             android:id="@+id/textdestacada4"
@@ -320,10 +318,10 @@
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
-            <!-- FILA 1 DE LA GALERÍA -->
+            <!-- BARRA DE PESTAÑAS -->
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="48dp"
                 android:layout_marginBottom="6dp"
                 android:orientation="horizontal">
 
@@ -332,15 +330,16 @@
                     android:layout_height="match_parent"
                     android:layout_gravity="center"
                     android:layout_weight="1"
+                    android:gravity="center"
                     android:orientation="vertical">
 
                     <ImageView
                         android:id="@+id/btnposts"
-                        android:layout_width="36dp"
-                        android:layout_height="36dp"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
                         android:layout_gravity="center_horizontal"
                         android:scaleType="centerCrop"
-                        android:src="@drawable/Posts" />
+                        android:src="@drawable/posts" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -348,12 +347,13 @@
                     android:layout_height="match_parent"
                     android:layout_gravity="center"
                     android:layout_weight="1"
+                    android:gravity="center"
                     android:orientation="vertical">
 
                     <ImageView
                         android:id="@+id/btnreels"
-                        android:layout_width="36dp"
-                        android:layout_height="36dp"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
                         android:layout_gravity="center_horizontal"
                         android:scaleType="centerCrop"
                         android:src="@drawable/reels" />
@@ -364,12 +364,13 @@
                     android:layout_height="match_parent"
                     android:layout_gravity="center"
                     android:layout_weight="1"
+                    android:gravity="center"
                     android:orientation="vertical">
 
                     <ImageView
                         android:id="@+id/btnreposts"
-                        android:layout_width="36dp"
-                        android:layout_height="36dp"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
                         android:layout_gravity="center_horizontal"
                         android:scaleType="centerCrop"
                         android:src="@drawable/respost" />
@@ -380,18 +381,20 @@
                     android:layout_height="match_parent"
                     android:layout_gravity="center"
                     android:layout_weight="1"
+                    android:gravity="center"
                     android:orientation="vertical">
 
                     <ImageView
                         android:id="@+id/btnetiquetas"
-                        android:layout_width="36dp"
-                        android:layout_height="36dp"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
                         android:layout_gravity="center_horizontal"
                         android:scaleType="centerCrop"
                         android:src="@drawable/etiquetas" />
                 </LinearLayout>
             </LinearLayout>
 
+            <!-- FILA 1 DE LA GALERÍA -->
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
@@ -432,15 +435,9 @@
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toEndOf="@+id/imageView7"
                     app:layout_constraintTop_toTopOf="parent" />
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="48dp"
-                    android:orientation="horizontal"></LinearLayout>
             </androidx.constraintlayout.widget.ConstraintLayout>
 
             <!-- FILA 2 DE LA GALERÍA -->
-
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
