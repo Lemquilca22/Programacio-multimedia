@@ -338,7 +338,7 @@
                         android:layout_width="24dp"
                         android:layout_height="24dp"
                         android:layout_gravity="center_horizontal"
-                        android:scaleType="centerCrop"
+                        android:scaleType="centerInside"
                         android:src="@drawable/posts" />
                 </LinearLayout>
 
@@ -355,7 +355,7 @@
                         android:layout_width="24dp"
                         android:layout_height="24dp"
                         android:layout_gravity="center_horizontal"
-                        android:scaleType="centerCrop"
+                        android:scaleType="centerInside"
                         android:src="@drawable/reels" />
                 </LinearLayout>
 
@@ -372,7 +372,7 @@
                         android:layout_width="24dp"
                         android:layout_height="24dp"
                         android:layout_gravity="center_horizontal"
-                        android:scaleType="centerCrop"
+                        android:scaleType="centerInside"
                         android:src="@drawable/respost" />
                 </LinearLayout>
 
@@ -389,7 +389,7 @@
                         android:layout_width="24dp"
                         android:layout_height="24dp"
                         android:layout_gravity="center_horizontal"
-                        android:scaleType="centerCrop"
+                        android:scaleType="centerInside"
                         android:src="@drawable/etiquetas" />
                 </LinearLayout>
             </LinearLayout>
@@ -453,7 +453,7 @@
                     app:layout_constraintEnd_toStartOf="@+id/imageView4"
                     app:layout_constraintHorizontal_chainStyle="spread"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
+                    app:layout_constraintTop_toTopOf="20dp" /> <!-- pequeño ajuste preventivo -->
 
                 <ImageView
                     android:id="@+id/imageView4"
